@@ -3,7 +3,7 @@ from .models import Image,Profile,Like,Comments
 from django.contrib.auth.models import User
 # Create your tests here.
 
-# Functions to create instances from models
+# create instances from models
 def create_user_instance():
    user = User(username='ken',email='kennedy.qen830@gmail.com',password='password')
    return user
@@ -69,7 +69,7 @@ class ImageTest(TestCase):
       self.assertTrue(len(images),1)
 
    def test_update_caption(self):
-      self.new_image.update_caption('I changed it')
+      self.new_image.update_caption('change')
       self.assertEqual(self.new_image.caption,'I changed it')
 
    def test_delete_image(self):
