@@ -26,7 +26,6 @@ def index(request):
       form = CommentForm()
 
    images = Image.objects.order_by('-time_posted')
-
    context = {
       'images': images,
       'form': form,
