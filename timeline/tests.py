@@ -79,7 +79,6 @@ class ImageTest(TestCase):
       self.assertTrue(len(images)<1)
 
 class LikesTest(TestCase):
-
    def setUp(self):
       user = create_user_instance()
       user.save()
