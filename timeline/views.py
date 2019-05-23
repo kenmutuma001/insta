@@ -155,7 +155,6 @@ def login_view(request):
    context = {
       'form': form
    }
-
    return render(request, 'registration/login.html', context)
 
 
