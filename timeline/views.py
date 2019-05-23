@@ -208,7 +208,6 @@ def like(request,image_id):
    return redirect('home')
 
 def follow(request,user_name):
-
     user = request.user
     follows = Follows.objects.filter(profile=user.profile)
     followed_user = User.objects.filter(username=user_name).first()
