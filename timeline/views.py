@@ -65,7 +65,6 @@ def new_post(request):
    return render(request, 'create_post.html', context)
 
 def register(request):
-
    if request.method == 'POST':
       form = Registration(request.POST)
       if form.is_valid():
