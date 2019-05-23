@@ -1,22 +1,16 @@
 # Instagram Clone
-
+A web app that tries to emulate instagram's features
 ###### AUTHOR
 Ken Mutuma
 
-A web app that tries to emulate instagram's features.
-
-
-
 ### Project Approach
    
-| Given       | Action       | Result  |
+| Behaviour      | input       | output |
 | ------------- |:-------------:| -----:|
-| User wants to sign up | They fill out the sign up form | They are logged in using the created credentials |
+| User wants to sign up | They fill in the sign up form | They are logged in using their credentials |
 | User wants to upload an image | They fill up the post creation form and submit | The image is uploaded and displayed to their followers  |
-| User wants to search for user | They enter the user's username | An account with the username is returned if found |
-| User wants to like and commment on a picture | They enter their comment or click on the like button | Their comment or like is added to the post |
-
-### Project Tools
+| User wants to search for other users | They enter the other user's name| if the account is valid it is returned |
+| User wants to like and commment on a post | They enter their comment or click on the like button | Their comment or like is added to the post |
 
 ##### Languages
 
@@ -26,18 +20,15 @@ A web app that tries to emulate instagram's features.
 
 
 ### Setting Up
-
-
-
    - Go to your chosen directory.
    - git clone this repo
-   - `cd <your-dir>/insta`
-
-
+   - install the requirements
+   - change the settings to development
+   - the app is good to go
 
 ### KNOWN BUGS
 
-This app doesn't seem to have any bugs for now. If you happen to come across one, I will be happy to take a look at it. Contact Me on:
+There are no known bugs. If you happen to come across one, I will be happy to take a look at it. Contact Me on:
 
 - 
 - [Email](kennedy.qen830@gmail.com)

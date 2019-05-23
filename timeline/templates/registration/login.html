@@ -3,24 +3,41 @@
 
 {% block content %}
 
-<div class="page">
+<head>
+   <link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
 
-   <div class="form-container">
+</head>
+
+<div class="page" style="background-image: linear-gradient(
+   rgba(143, 31, 143, 0.945),
+   rgba(212, 44, 86, 0.959)
+   
+   
+ )">
+   <div style="font-family: 'Cookie', cursive;font-size: 100px;text-align: center;padding-top: 20px;">
+      instaClone
+      <div style="">
+         <img src="{% static 'images/Instagram.png' %}" alt="" height="100px" width="100px;">
+      </div>
+
+   </div>
+
+   <div class="form-container" style="border-radius: 10px;background-color: whitesmoke;margin-top: -10px;">
 
       <form action="" method="post">
          <div class="legend">
-            <div class="form-glyph">
-               <img src="{% static 'images/insta_text.svg' %}" alt="">
+            <div class="">
+               <h3> <i>Already have an account?</i> </h3>
             </div>
          </div>
          {% csrf_token %}
          {{ form.as_p }}
-         <button type="submit" class="btn">Log In</button>
+         <button type="submit" class="btn" style="border-radius: 12px;">Log In</button>
       </form>
 
    </div>
 
-   <div class="acc-status-check">
+   <div class="acc-status-check" style="background-color:whitesmoke;border-radius: 10px;">
       <p>Don't have an account? <a href="{% url 'register' %}">Sign Up</a></p>
    </div>
 
