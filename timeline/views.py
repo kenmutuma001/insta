@@ -194,7 +194,6 @@ def image_view(request,image_id):
 
 
 def like(request,image_id):
-
    user = request.user
 
    image = Image.objects.filter(pk=image_id).first()
