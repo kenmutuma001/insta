@@ -70,7 +70,7 @@ class ImageTest(TestCase):
 
    def test_update_caption(self):
       self.new_image.update_caption('change')
-      self.assertEqual(self.new_image.caption,'I changed it')
+      self.assertEqual(self.new_image.caption,'change')
 
    def test_delete_image(self):
       self.new_image.save_image()
