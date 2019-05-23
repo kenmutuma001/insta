@@ -59,8 +59,6 @@ def new_post(request):
          return redirect('home')
    else:
       form = ImageForm()
-
-
    context = {
       'form': form
    }
