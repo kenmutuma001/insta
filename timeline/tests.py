@@ -5,15 +5,15 @@ from django.contrib.auth.models import User
 
 # Functions to create instances from models
 def create_user_instance():
-   user = User(username='mikechumba',email='mike@test.com',password='password')
+   user = User(username='ken',email='kennedy.qen830@gmail.com',password='password')
    return user
 
 def create_profile_instance():
-   profile = Profile(avatar='default.jpg',bio='Someone someone')
+   profile = Profile(avatar='default.jpg',bio='iam the one')
    return profile
 
 def create_image_instance(profile_instance):
-   image = Image(img='avatar.jpg',caption='some kind of avatar',author_id=profile_instance)
+   image = Image(img='avatar.jpg',caption='wow',author_id=profile_instance)
    return image
 
 def create_comments_instance(profile_instance,image_instance):
