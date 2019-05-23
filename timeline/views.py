@@ -100,7 +100,6 @@ def profile(request):
 
 @login_required
 def edit_profile(request):
-
    user = request.user
 
    if request.method == 'POST':
