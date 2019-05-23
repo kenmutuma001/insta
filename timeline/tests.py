@@ -54,7 +54,6 @@ class ProfileTest(TestCase):
       self.assertEqual(avatar,'default.jpg')
 
 class ImageTest(TestCase):
-
    def setUp(self):
       user = create_user_instance()
       user.save()
